@@ -15,18 +15,16 @@
     </header>   
     
    <div class="press-text"> 
-    <div id="typed-strings">
-        <p>Press the <strong>NEW GAME</strong> Button to <strong>START</strong> the game </p>
-        <p>Press <strong>HIT</strong> button for the <strong>next card</strong></p>
-        <p>Press <strong>STAY</strong> button for <strong>no more card </strong></p>
-        <p>Let's test your luck!</p>
-      </div>
+   
       <span id="typed"></span>
   
       <script>
           $('document').ready(function(){
           var typed = new Typed('#typed', {
-            stringsElement: '#typed-strings',
+            strings:["Press the <strong>NEW GAME</strong> Button to <strong>START</strong> the game",
+        "Press <strong>HIT</strong> button for the <strong>next card</strong>",
+        "Press <strong>STAY</strong> button for <strong>no more card </strong>",
+        "Let's test your luck!"],
             backSpeed: 40,
             typeSpeed: 40
           });
